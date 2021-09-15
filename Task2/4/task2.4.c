@@ -1,13 +1,14 @@
 #include <stdio.h>
-
-
+#define RESET   "\033[0m"
+#define RED     "\033[31m"
+typedef char myStr;
 int char2intDigit(char c)
 {
   return c-'0';
 }
 
 
-double str2double(char str[])
+double str2double(myStr str[])
 {
   int ind1;
   double res = 0, temp=1;
@@ -16,12 +17,17 @@ double str2double(char str[])
   while (str[ind1] != '.')
   {
     res = (res * 10.0) + char2intDigit(str[ind1]);
+    ++ind1;
   }
+  ++ind1;
   //double part
-  for (int i = ind1; i<(int) sizeof(str)/sizeof(str[0]); ++i)
+  fprintf(stderr, RED "%u\n" RESET, sizeof str / sizeof *str);
+  for (int i = ind1; i< 1000; ++i)
   {
-    temp /= 10.0;
-    res += char2intDigit(str[i])*10;
+    if (!str[i])
+      break;
+    temp = temp / 10.0;
+    res += char2intDigit(str[i])*temp;
   }
   return res;
 }
@@ -29,9 +35,9 @@ double str2double(char str[])
 
 int main()
 {
-  char temp[];
+  myStr temp[2000];
   while(scanf("%s", &temp)!=EOF)
   {
-    printf("%.10g\n", str2double(temp)));
+    printf("%lf\n", str2double(temp));
   }
 }
