@@ -80,14 +80,14 @@ tree add_node(tree tr, tree node){
 
 int is_val_in_tree(tree tr, int val)
 {
+	if(!tr)
+		return 0;
 	if(val == tr->elem)
 		return 1;
 	if(tr->left && val < tr->elem)
 		return is_val_in_tree(tr->left, val);
 	if(tr->right && val > tr->elem)
 		return is_val_in_tree(tr->right, val);
-	if(!tr->left && !tr->right)
-		return 0;
 }
 
 tree find_node(tree tr, int val)
