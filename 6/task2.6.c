@@ -1,7 +1,4 @@
-//ATTENTION: This task isn't done yet!!!
-//ATTENTION: This task isn't done yet!!!
-//ATTENTION: This task isn't done yet!!!
-//ATTENTION: This task isn't done yet!!!
+
 #include <stdio.h>
 #include <stdlib.h>
 #define RESET   "\033[0m"
