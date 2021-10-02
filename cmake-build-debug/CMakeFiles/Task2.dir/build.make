@@ -66,27 +66,27 @@ include CMakeFiles/Task2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Task2.dir/flags.make
 
-CMakeFiles/Task2.dir/6/task2.6.c.o: CMakeFiles/Task2.dir/flags.make
-CMakeFiles/Task2.dir/6/task2.6.c.o: ../6/task2.6.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Task2.dir/6/task2.6.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Task2.dir/6/task2.6.c.o -c /Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/6/task2.6.c
+CMakeFiles/Task2.dir/5/task2.5.c.o: CMakeFiles/Task2.dir/flags.make
+CMakeFiles/Task2.dir/5/task2.5.c.o: ../5/task2.5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Task2.dir/5/task2.5.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Task2.dir/5/task2.5.c.o -c /Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/5/task2.5.c
 
-CMakeFiles/Task2.dir/6/task2.6.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Task2.dir/6/task2.6.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/6/task2.6.c > CMakeFiles/Task2.dir/6/task2.6.c.i
+CMakeFiles/Task2.dir/5/task2.5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Task2.dir/5/task2.5.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/5/task2.5.c > CMakeFiles/Task2.dir/5/task2.5.c.i
 
-CMakeFiles/Task2.dir/6/task2.6.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Task2.dir/6/task2.6.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/6/task2.6.c -o CMakeFiles/Task2.dir/6/task2.6.c.s
+CMakeFiles/Task2.dir/5/task2.5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Task2.dir/5/task2.5.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/5/task2.5.c -o CMakeFiles/Task2.dir/5/task2.5.c.s
 
 # Object files for target Task2
 Task2_OBJECTS = \
-"CMakeFiles/Task2.dir/6/task2.6.c.o"
+"CMakeFiles/Task2.dir/5/task2.5.c.o"
 
 # External object files for target Task2
 Task2_EXTERNAL_OBJECTS =
 
-Task2: CMakeFiles/Task2.dir/6/task2.6.c.o
+Task2: CMakeFiles/Task2.dir/5/task2.5.c.o
 Task2: CMakeFiles/Task2.dir/build.make
 Task2: CMakeFiles/Task2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Task2"

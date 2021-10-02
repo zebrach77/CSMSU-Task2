@@ -129,29 +129,29 @@ Task2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/build
 .PHONY : Task2/fast
 
-6/task2.6.o: 6/task2.6.c.o
-.PHONY : 6/task2.6.o
+5/task2.5.o: 5/task2.5.c.o
+.PHONY : 5/task2.5.o
 
 # target to build an object file
-6/task2.6.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/6/task2.6.c.o
-.PHONY : 6/task2.6.c.o
+5/task2.5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/5/task2.5.c.o
+.PHONY : 5/task2.5.c.o
 
-6/task2.6.i: 6/task2.6.c.i
-.PHONY : 6/task2.6.i
+5/task2.5.i: 5/task2.5.c.i
+.PHONY : 5/task2.5.i
 
 # target to preprocess a source file
-6/task2.6.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/6/task2.6.c.i
-.PHONY : 6/task2.6.c.i
+5/task2.5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/5/task2.5.c.i
+.PHONY : 5/task2.5.c.i
 
-6/task2.6.s: 6/task2.6.c.s
-.PHONY : 6/task2.6.s
+5/task2.5.s: 5/task2.5.c.s
+.PHONY : 5/task2.5.s
 
 # target to generate assembly for a file
-6/task2.6.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/6/task2.6.c.s
-.PHONY : 6/task2.6.c.s
+5/task2.5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/5/task2.5.c.s
+.PHONY : 5/task2.5.c.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Task2"
-	@echo "... 6/task2.6.o"
-	@echo "... 6/task2.6.i"
-	@echo "... 6/task2.6.s"
+	@echo "... 5/task2.5.o"
+	@echo "... 5/task2.5.i"
+	@echo "... 5/task2.5.s"
 .PHONY : help
 
 
