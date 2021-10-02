@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/6/task2.6-new.c
+stdio.h
+-
+stdlib.h
+-
+
