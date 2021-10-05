@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/testDir/test.c">
+		<Unit filename="/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/7/task2.7.c">
 			<Option target="Task2"/>
 		</Unit>
 		<Unit filename="/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/CMakeLists.txt">

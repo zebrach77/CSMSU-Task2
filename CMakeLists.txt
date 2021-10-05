@@ -4,4 +4,4 @@ project(Task2 C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Task2
-        testDir/test.c)
+        7/task2.7.c)
