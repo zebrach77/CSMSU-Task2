@@ -26,7 +26,7 @@ main()
 
 void getlex()
 {
-	while ( (curlex=getchar()) == ' ');
+	while ((curlex=getchar()) == ' ');
 }
 
 

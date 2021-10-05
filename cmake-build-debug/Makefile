@@ -129,29 +129,29 @@ Task2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/build
 .PHONY : Task2/fast
 
-4/task2.4.o: 4/task2.4.c.o
-.PHONY : 4/task2.4.o
+testDir/test.o: testDir/test.c.o
+.PHONY : testDir/test.o
 
 # target to build an object file
-4/task2.4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/4/task2.4.c.o
-.PHONY : 4/task2.4.c.o
+testDir/test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/testDir/test.c.o
+.PHONY : testDir/test.c.o
 
-4/task2.4.i: 4/task2.4.c.i
-.PHONY : 4/task2.4.i
+testDir/test.i: testDir/test.c.i
+.PHONY : testDir/test.i
 
 # target to preprocess a source file
-4/task2.4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/4/task2.4.c.i
-.PHONY : 4/task2.4.c.i
+testDir/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/testDir/test.c.i
+.PHONY : testDir/test.c.i
 
-4/task2.4.s: 4/task2.4.c.s
-.PHONY : 4/task2.4.s
+testDir/test.s: testDir/test.c.s
+.PHONY : testDir/test.s
 
 # target to generate assembly for a file
-4/task2.4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/4/task2.4.c.s
-.PHONY : 4/task2.4.c.s
+testDir/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task2.dir/build.make CMakeFiles/Task2.dir/testDir/test.c.s
+.PHONY : testDir/test.c.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Task2"
-	@echo "... 4/task2.4.o"
-	@echo "... 4/task2.4.i"
-	@echo "... 4/task2.4.s"
+	@echo "... testDir/test.o"
+	@echo "... testDir/test.i"
+	@echo "... testDir/test.s"
 .PHONY : help
 
 

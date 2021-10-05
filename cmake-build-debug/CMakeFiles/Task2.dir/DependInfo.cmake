@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/4/task2.4.c" "/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/cmake-build-debug/CMakeFiles/Task2.dir/4/task2.4.c.o"
+  "/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/testDir/test.c" "/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/cmake-build-debug/CMakeFiles/Task2.dir/testDir/test.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
