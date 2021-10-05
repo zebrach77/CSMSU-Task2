@@ -13,7 +13,13 @@ double str2double(myStr str[])
   int ind1;
   double res = 0, temp=1;
   ind1 = 0;
+  int kMinus = 1;
   //integer part
+  if(str[ind1]=='-')
+  {
+	  kMinus = -1;
+	  ind1 +=1;
+  }
   while (str[ind1] != '.')
   {
     res = (res * 10.0) + char2intDigit(str[ind1]);
@@ -21,7 +27,7 @@ double str2double(myStr str[])
   }
   ++ind1;
   //double part
-  fprintf(stderr, RED "%u\n" RESET, sizeof str / sizeof *str);
+//  fprintf(stderr, RED "%u\n" RESET, sizeof str / sizeof *str);
   for (int i = ind1; i< 1000; ++i)
   {
     if (!str[i])
@@ -29,7 +35,7 @@ double str2double(myStr str[])
     temp = temp / 10.0;
     res += char2intDigit(str[i])*temp;
   }
-  return res;
+  return res*kMinus;
 }
 
 

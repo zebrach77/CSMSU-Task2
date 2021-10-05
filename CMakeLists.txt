@@ -4,4 +4,4 @@ project(Task2 C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Task2
-        5/task2.5.c)
+        4/task2.4.c)
