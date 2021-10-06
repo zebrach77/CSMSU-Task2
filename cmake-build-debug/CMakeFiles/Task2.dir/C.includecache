@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/testDir/test.c
+/Users/zebrach77/Documents/Programming/C/PRAC-CSMSU/Task2/7/task2.7.c
 stdio.h
+-
+setjmp.h
 -
 

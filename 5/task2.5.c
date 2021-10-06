@@ -8,7 +8,6 @@ struct list_node
 };
 typedef struct list_node* list;
 
-
 list init(char* s)
 {
 	list l = malloc(sizeof(struct list_node));
