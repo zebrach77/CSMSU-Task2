@@ -42,7 +42,7 @@ double str2double(myStr str[])
 int main()
 {
   myStr temp[2000];
-  while(scanf("%s", &temp)!=EOF)
+  while(scanf("%s", temp)!=EOF)
   {
     printf("%lf\n", str2double(temp));
   }

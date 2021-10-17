@@ -10,7 +10,7 @@ int main()
 	char t[100];
 	while(t != EOF)     //THIS IS AN INCORRECT INPUT PROGRAM
 	{
-		scanf("%s", &t);
+		scanf("%s", t);
 	}
 	printf("cvbnm,");
 }
@@ -18,7 +18,7 @@ int main()
 int main()
 {
 	char t[100];
-	while(scanf("%s", &t) != EOF) //THIS IS A CORRECT INPUT PROGRAM
+	while(scanf("%s", t) != EOF) //THIS IS A CORRECT INPUT PROGRAM
 	{
 		//do some code
 		;

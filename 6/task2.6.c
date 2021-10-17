@@ -3,6 +3,16 @@
 #include <stdlib.h>
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
+
+
+/*
+ * I FOUND A BIG BUG
+ * THIS PROGRAM DOESN'T DELETE ELEMENTS IN TREE
+ * GIVE ME SOME TIME TO FIX IT
+ * OR SUGGEST A SOLUTION TO FIX IT
+ */
+
+
 struct tree_node
 {
 	struct tree_node *left , *right;
@@ -183,14 +193,7 @@ tree remove_node(tree tr, tree nodest)
 	}
 	return NULL;
 }
-/*
- *       1
- *     0   5
- *        3
- *         6
- *
- *
- */
+
 int char2intDigit(char c)
 {
 	return c-'0';
@@ -212,8 +215,8 @@ int char2int(char c[])
 int main()
 {
 	tree tr1 = NULL;
-	char temp[20];
-	while(scanf("%s", &temp)!=EOF)
+	char temp[10000];
+	while(scanf("%s", temp)!=EOF)
 	{
 		int num = char2int(temp);
 		printf("%d\n", num);
@@ -232,10 +235,4 @@ int main()
 				printf("Element not found\n");
 		}
 	}
-//	tr1 = add_node_with_val(tr1, 24);
-//	tr1 = add_node_with_val(tr1, 26);
-//	tr1 = add_node_with_val(tr1, 67);
-//	tr1 = add_node_with_val(tr1, 68);
-//	tree nd = find_node(tr1, 67);
-//	remove_node(tr1, nd);
 }

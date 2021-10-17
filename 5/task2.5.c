@@ -12,20 +12,12 @@ list init(char* s)
 {
 	list l = malloc(sizeof(struct list_node));
 	int i = 0;
-//	char* st = s;
-//	while(s[i])
-//	{
-//		l->elem = &s[i];
-//		++i;
-//		l->elem = *(&(l->elem)+1);
-//	}
 	l->elem = malloc(sizeof(char)*100);
 	while(s[i])
 	{
 		l->elem[i] = s[i];
 		++i;
 	}
-//	l->elem -= i;
 	l->next = NULL;
 	return l;
 }
@@ -102,7 +94,7 @@ int main()
 	char* temp0 = "begin";
 	list l1 = init(temp0);
 	char tt[100];
-	while(scanf("%s", &tt) != EOF)
+	while(scanf("%s", tt) != EOF)
 	{
 //		temp0 = NULL;
 		list ndTemp = init(tt);
