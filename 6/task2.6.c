@@ -6,10 +6,7 @@
 
 
 /*
- * I FOUND A BIG BUG
- * THIS PROGRAM DOESN'T DELETE ELEMENTS IN TREE
- * GIVE ME SOME TIME TO FIX IT
- * OR SUGGEST A SOLUTION TO FIX IT
+ * BUG FIXED, BUT PROGRAM STILL CAN'T DELETE THE VERY FIRST ELEMENT
  */
 
 
@@ -66,7 +63,7 @@ tree add_node(tree tr, tree node){
 	}
 	else if(tr->left && node->elem < tr->elem)
 	{
-		add_node_with_val(tr->left, node);
+		add_node(tr->left, node);
 	}
 	else if(!tr->left && node->elem < tr->elem)
 	{
@@ -74,7 +71,7 @@ tree add_node(tree tr, tree node){
 	}
 	else if(tr->right && node->elem > tr->elem)
 	{
-		add_node_with_val(tr->right, node);
+		add_node(tr->right, node);
 	}
 	else if(!tr->right && node->elem > tr->elem)
 	{
@@ -98,6 +95,7 @@ int is_val_in_tree(tree tr, int val)
 		return is_val_in_tree(tr->left, val);
 	if(tr->right && val > tr->elem)
 		return is_val_in_tree(tr->right, val);
+	return 0;
 }
 
 tree find_node(tree tr, int val)
@@ -110,6 +108,7 @@ tree find_node(tree tr, int val)
 		return find_node(tr->right, val);
 	if(!tr->left && !tr->right)
 		return NULL;
+	return NULL;
 }
 
 void remove_tree(tree tr)
@@ -130,6 +129,9 @@ void remove_tree(tree tr)
 	}
 
 }
+
+
+
 
 
 tree copy_tree(tree tr)
@@ -153,17 +155,17 @@ tree remove_node(tree tr, tree nodest)
 		{
 			if (tr->left->elem == node->elem)
 			{
-				tree tempLeft = node->left;
-				tree tempRight = node->right;
+				tree * tempLeft = &node->left;
+				tree * tempRight = &node->right;
 
 				remove_tree(tr->left);
 				free(tr->left);
 				tr->left = NULL;
 
-				if (tempLeft)
-					tr = add_node(tr, tempLeft);
-				if (tempRight)
-					tr = add_node(tr, tempRight);
+				if (*tempLeft)
+					tr = add_node(tr, *tempLeft);
+				if (*tempRight)
+					tr = add_node(tr, *tempRight);
 
 				return tr;
 			}
@@ -172,17 +174,17 @@ tree remove_node(tree tr, tree nodest)
 		{
 			if (tr->right->elem == node->elem)
 			{
-				tree tempLeft = node->left;
-				tree tempRight = node->right;
+				tree *tempLeft = &node->left;
+				tree *tempRight = &node->right;
 
 				remove_tree(tr->right);
 				free(tr->right);
 				tr->right = NULL;
 
-				if (tempLeft)
-					tr = add_node(tr, tempLeft);
-				if (tempRight)
-					tr = add_node(tr, tempRight);
+				if (*tempLeft)
+					tr = add_node(tr, *tempLeft);
+				if (*tempRight)
+					tr = add_node(tr, *tempRight);
 				return tr;
 			}
 		}
@@ -219,7 +221,7 @@ int main()
 	while(scanf("%s", temp)!=EOF)
 	{
 		int num = char2int(temp);
-		printf("%d\n", num);
+		printf("GOT IT\n");
 		if(temp[0]=='+')
 			tr1 = add_node_with_val(tr1, num);
 		else if(temp[0]=='-')
